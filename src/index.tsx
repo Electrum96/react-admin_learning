@@ -7,3 +7,4 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <App />
     </React.StrictMode>
 );
+//этот файл основная точка входа, отображает <App>  компонент

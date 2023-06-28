@@ -1,15 +1,21 @@
+import { Admin, Resource} from "react-admin";
+import { dataProvider } from './dataProvider';
 import { UserList } from "./users";
-import { dataProvider } from  "./dataProvider";
-import { Admin, Resource } from "react-admin";
+import { PostEdit, PostList, PostCreate } from "./posts";
+import PostIcon from "@mui/icons-material/Book"; 
+import UserIcon from "@mui/icons-material/Group";
+//настройка значков меню, передача icon атрибута каждому <Resource>
+import { Dashboard } from "./Dashboard";
+//компонент пользовательской домашней страницы, передается в  св-ве dashboard для <Admin>
+import { authProvider } from "./authProvider";
+//компонент со структурой аунтефикации, передается в  св-ве authProvider для <Admin>
 
-// @ts-ignore
+
 export const App = () => (
-    <Admin
-        dataProvider={dataProvider}>
-        <Resource name="users" list={UserList}/>
-	
-        
+    <Admin  authProvider={authProvider} dataProvider={dataProvider} dashboard={Dashboard}>
+      <Resource  name="posts" list={PostList}  edit={PostEdit} create={PostCreate} icon={PostIcon}/>
+      <Resource  name="users" list={UserList}  icon={UserIcon} recordRepresentation="name" />
     </Admin>
-);
+  );
 
-    
+  //<App> отображает компонент <Admin> - корневой компонент приложения react-admin
