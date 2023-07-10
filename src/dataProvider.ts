@@ -4,3 +4,4 @@ export const dataProvider = jsonServerProvider(
     import.meta.env.VITE_JSON_SERVER_URL
 );
 
+// поставщик данных, переменная среды vite
