@@ -1,11 +1,11 @@
-# my-app
+# test-admin
 
 ## Installation
 
 Install the application dependencies by running:
 
 ```sh
-npm install
+yarn
 ```
 
 ## Development
@@ -13,7 +13,7 @@ npm install
 Start the application in development mode by running:
 
 ```sh
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -21,7 +21,7 @@ npm run dev
 Build the application in production mode by running:
 
 ```sh
-npm run build
+yarn build
 ```
 
 ## DataProvider
