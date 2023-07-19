@@ -8,6 +8,7 @@ import {Dashboard} from './Dashboard';
 import {authProvider} from './authProvider';
 
 
+
 export const App = () => (
     <Admin
         authProvider={authProvider}
