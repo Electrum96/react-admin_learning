@@ -30,11 +30,11 @@ export const PostList = () => (
 
 export const PostEdit = () => (
     <Edit title={<PostTitle/>} >
-        <SimpleForm>
-            <TextInput source="id" disabled/>
+        <SimpleForm sx={{bgcolor:'pink'}}>
+            <TextInput source="id" disabled  />
             <ReferenceInput source="userId" reference="users"/>
             <TextInput source="title"/>
-            <TextInput source="body" multiline rows={5}/>
+            <TextInput source="body" multiline rows={8} />
         </SimpleForm>
     </Edit>
 );
