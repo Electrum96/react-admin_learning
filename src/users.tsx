@@ -8,7 +8,7 @@ export const UserList = () => {
         <List sx={{bgcolor:'rosyBrown'}}>
             <Datagrid rowClick="edit">
             <TextField source="id" />
-            <Avatar  src="/static/images/avatar/1.jpg" sx={{wight:24, height:40, bgcolor:'pink'}} />
+            <Avatar src="/static/images/avatar/1.jpg" sx={{wight:24, height:40, bgcolor:'pink'}} />
             <TextField source="username" sx={{fontSize:20, fontFamily:"Roboto", fontWeight:600}} />
             <EmailField source="email" />
             <TextField source="phone"  />
