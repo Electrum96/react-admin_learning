@@ -17,4 +17,10 @@ it('Read file using readFile()', function() {
     cy.readFile('./cypress/fixtures/example.json').then((data) => {
         cy.log(data.email)
     })
-})
+})// чтение файла при помощи readFile
+
+it('Write file demo', function() {
+    cy.writeFile('sample.text', 'Hello world\n') 
+
+    cy.writeFile('sample.text', 'Hello world2', {flag:'a'})
+})// записать данные в файл 
