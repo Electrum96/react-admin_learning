@@ -12,3 +12,9 @@ it('Read file with fixture', function() {
 
     cy.log(this.test_data.name)
 })/// чтение файлов при помощи fixture
+
+it('Read file using readFile()', function() {
+    cy.readFile('./cypress/fixtures/example.json').then((data) => {
+        cy.log(data.email)
+    })
+})
