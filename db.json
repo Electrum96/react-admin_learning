@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post one",
+      "body": "This is post body",
+      "PublishedAt": "25-07-2023"
+    },
+    {
+      "id": "2",
+      "title": "Post two",
+      "body": "This is post body",
+      "PublishedAt": "25-07-2023"
+    },
+    {
+      "id": "3",
+      "title": "Post thre",
+      "body": "This is post body",
+      "PublishedAt": "25-07-2023"
+    },
+    {
+      "title": "Post four",
+      "body": "This is post body",
+      "PublishedAt": "25.07.2023",
+      "id": "khylKEB"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Brown",
+      "email": "johnBrown@mail.ru"
+    }
+  ]
+}

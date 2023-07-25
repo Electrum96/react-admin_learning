@@ -4,17 +4,17 @@
     "scripts": {
         "pretest": " echo I am pretest",
         "posttest": " echo I am posttest",
-        "test":"echo I am test",
+        "test": "echo I am test",
         "dev": "vite",
         "build": "vite build",
-        "serve": "vite preview",
+        "client": "yarn start --cwd client",
+        "server": "json-server --watch db.json --port 5000",
         "type-check": "tsc --noEmit",
         "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
         "format": "prettier --write ./src",
         "hello": "echo Hello, world",
         "test:cypress": "cypress open",
         "cy-test": "cypress run"
-        
     },
     "dependencies": {
         "@emotion/react": "^11.7.1",
@@ -23,6 +23,7 @@
         "@mui/material": "^5.0.2",
         "@mui/system": "5.14.0",
         "@mui/x-date-pickers": "^6.10.1",
+        "json-server": "^0.17.3",
         "jsonexport": "^3.2.0",
         "lodash": "~4.17.5",
         "prop-types": "^15.7.2",
@@ -60,5 +61,10 @@
         "react-app-polyfill": "^1.0.4",
         "typescript": "^5.1.6",
         "vite": "^4.3.9"
-    }
+    },
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Electrum96/react-admin_learning.git",
+    "author": "For_tuna <kachalina.kate96@mail.ru>",
+    "license": "MIT"
 }
