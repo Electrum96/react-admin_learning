@@ -1,6 +1,6 @@
 // import { DataProvider, fetchUtils } from "react-admin";
 // import { stringify } from "query-string";
-// import { number } from "prop-types";
+
 
 // const apiUrl = 'https://my.api.com/';
 // const httpClient = fetchUtils.fetchJson;
@@ -93,8 +93,8 @@
 //     }
 // };
 
-// import jsonServerProvider from 'ra-data-json-server';
+import jsonServerProvider from 'ra-data-json-server';
 
-// export const dataProvider = jsonServerProvider(
-//     import.meta.env.VITE_JSON_SERVER_URL
-// );
+export const dataProvider = jsonServerProvider(
+    import.meta.env.VITE_JSON_SERVER_URL
+);

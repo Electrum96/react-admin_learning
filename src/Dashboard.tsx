@@ -1,5 +1,5 @@
 import {Card, CardContent, CardHeader} from "@mui/material";
-import { DateTimePicker } from "@mui/x-date-pickers";
+
 
 export const Dashboard = () => (
 
@@ -8,11 +8,6 @@ export const Dashboard = () => (
     }}>
         <CardHeader title="Welcome to the administration"/>
         <CardContent>Lorem ipsum sic dolor amet...</CardContent>
-        {/* <DateTimePicker
-            label="Controlled picker"
-            value={value}
-            onChange={(newValue) => setValue(newValue)}/> */}
-
     </Card>
 
 );
